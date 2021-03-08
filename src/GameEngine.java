@@ -3,7 +3,7 @@ public class GameEngine {
     private int hp = 100;
     private String characterName = "Sir Emmentaller";
 
-    private static GameEngine instance;
+    private static GameEngine instance = new GameEngine();  //od razu stworzona instancja to proste zabezpieczenie przed punktami zapalnymi (np. wielowatkowowścią)
 
     private GameEngine(){
 
